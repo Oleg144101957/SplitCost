@@ -1,5 +1,5 @@
 # SplitCost
 
-Test Ivan
+Test from Git
 
 Split Cost
