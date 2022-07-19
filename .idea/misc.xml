@@ -3,10 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/layout/activity_cost_screen.xml" value="0.24791666666666667" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.24791666666666667" />
-        <entry key="app/src/main/res/layout/cost_item.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/trip_item.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/aarka/AndroidStudioProjects/SplitCost/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2955" />
+        <entry key="..\:/Users/aarka/AndroidStudioProjects/SplitCost/app/src/main/res/drawable/ic_baseline_more_vert_24.xml" value="0.2955" />
+        <entry key="..\:/Users/aarka/AndroidStudioProjects/SplitCost/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2955" />
+        <entry key="..\:/Users/aarka/AndroidStudioProjects/SplitCost/app/src/main/res/layout/activity_main.xml" value="0.33016304347826086" />
+        <entry key="..\:/Users/aarka/AndroidStudioProjects/SplitCost/app/src/main/res/layout/cost_item.xml" value="0.67" />
       </map>
     </option>
   </component>
