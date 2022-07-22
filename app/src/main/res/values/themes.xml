@@ -13,10 +13,23 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="FabDiamondOverlay" parent="@style/Widget.MaterialComponents.FloatingActionButton">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+
     <style name="Theme.SplitCost.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
     <style name="Theme.SplitCost.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="Theme.SplitCost.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
+    <style name="BottomAppBarTheme" parent="Widget.MaterialComponents.BottomAppBar.Colored">
+        <item name="android:itemBackground">@android:color/black</item>
+    </style>
 </resources>
