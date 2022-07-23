@@ -66,6 +66,7 @@
             android:id="@+id/recyclerViewCost"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            tools:listitem="@layout/cost_item"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/costLayout" />
