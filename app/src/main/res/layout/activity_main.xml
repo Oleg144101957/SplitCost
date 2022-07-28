@@ -8,6 +8,11 @@
     android:background="#F6F9FC"
     tools:context=".presantation.MainActivity">
 
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/containerMainActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
 
 
 

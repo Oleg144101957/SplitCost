@@ -3,6 +3,7 @@ package com.vishnevskiypro.splitcost.presantation
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.vishnevskiypro.splitcost.R
+import com.vishnevskiypro.splitcost.presantation.fragments.listCost.FragmentCost
 
 class CostScreen : AppCompatActivity() {
 

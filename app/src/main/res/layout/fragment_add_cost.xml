@@ -4,11 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".presantation.AddCost">
+    tools:context=".presantation.fragments.addCost.AddCost">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/titileAddCost"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/add_cost_title"
@@ -17,8 +17,36 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <EditText
+        android:id="@+id/nameTextInput"
+        android:hint="Enter Name Cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titileAddCost"/>
+
+    <EditText
+        android:id="@+id/amountTextInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Amount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameTextInput"/>
+
+    <EditText
+        android:id="@+id/whoPaidInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Who paid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/amountTextInput"/>
+
+
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="248dp"
@@ -27,6 +55,6 @@
         android:text="AddCost"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/whoPaidInput" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

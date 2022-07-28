@@ -17,6 +17,7 @@
         <entry key="app/src/main/res/layout/fragment_add_trip.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/fragment_cost.xml" value="0.2" />
         <entry key="app/src/main/res/layout/fragment_trip.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/trip_item.xml" value="0.18177083333333333" />
       </map>
     </option>
   </component>

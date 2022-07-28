@@ -6,18 +6,21 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.vishnevskiypro.splitcost.R
 import com.vishnevskiypro.splitcost.databinding.ActivityMainBinding
+import com.vishnevskiypro.splitcost.presantation.fragments.listTrip.FragmentTrip
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater).also { setContentView(it.root) }
+        setContentView(R.layout.activity_main)
 
+        val fragmentTrip = FragmentTrip()
 
-        val intent = Intent(this, CostScreen::class.java)
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.containerMainActivity, fragmentTrip)
+            commit()
+        }
 
 
 

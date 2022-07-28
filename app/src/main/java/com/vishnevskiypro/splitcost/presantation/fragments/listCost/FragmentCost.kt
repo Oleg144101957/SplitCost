@@ -1,4 +1,4 @@
-package com.vishnevskiypro.splitcost.presantation
+package com.vishnevskiypro.splitcost.presantation.fragments.listCost
 
 import android.content.Context
 import android.graphics.Color
@@ -12,6 +12,10 @@ import com.google.android.material.bottomappbar.BottomAppBarTopEdgeTreatment
 import com.google.android.material.shape.MaterialShapeDrawable
 import com.vishnevskiypro.splitcost.R
 import com.vishnevskiypro.splitcost.databinding.FragmentCostBinding
+import com.vishnevskiypro.splitcost.presantation.BottomAppBarCutCornersTopEdge
+import com.vishnevskiypro.splitcost.presantation.Model
+import com.vishnevskiypro.splitcost.presantation.MyAdapter
+import com.vishnevskiypro.splitcost.presantation.fragments.addCost.AddCost
 
 
 class FragmentCost(context: Context) : Fragment(R.layout.fragment_cost) {

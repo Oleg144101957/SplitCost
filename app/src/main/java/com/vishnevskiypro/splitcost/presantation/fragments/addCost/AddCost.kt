@@ -1,4 +1,4 @@
-package com.vishnevskiypro.splitcost.presantation
+package com.vishnevskiypro.splitcost.presantation.fragments.addCost
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
