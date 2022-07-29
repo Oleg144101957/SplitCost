@@ -24,6 +24,9 @@ class ListTripAdapter : RecyclerView.Adapter<ListTripAdapter.TripHolder>(){
             binding.apply {
                 tripName.text = trip.tripName
                 tripAvatarImage.setImageResource(R.drawable.ic_baseline_train_24)
+                tripLayout.setOnClickListener {
+
+                }
             }
         }
     }

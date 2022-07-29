@@ -1,9 +1,7 @@
 package com.vishnevskiypro.splitcost.data
 
 import android.content.Context
-import androidx.room.Database
-import androidx.room.Room
-import androidx.room.RoomDatabase
+import androidx.room.*
 import com.vishnevskiypro.splitcost.data.dao.CostDao
 import com.vishnevskiypro.splitcost.data.dao.PersonDao
 import com.vishnevskiypro.splitcost.data.dao.TripDao
@@ -16,6 +14,7 @@ import com.vishnevskiypro.splitcost.model.Trip
     entities =[Trip::class, Person::class, Cost::class],
     version = 1,
     exportSchema = false)
+
 abstract class SplitCostDatabase : RoomDatabase(){
 
     abstract fun personDao(): PersonDao

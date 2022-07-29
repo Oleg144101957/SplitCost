@@ -63,10 +63,19 @@
             android:layout_marginBottom="10dp"
             android:layout_toEndOf="@+id/avatarImage"
             android:alpha="0.9"
-            android:text="MCDonalds 125$"
+            android:text="MCDonalds"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/amount_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_toRightOf="@id/description_cost"
+            android:layout_toEndOf="@id/paidBy"
+            android:text="25$" />
 
 
     </RelativeLayout>

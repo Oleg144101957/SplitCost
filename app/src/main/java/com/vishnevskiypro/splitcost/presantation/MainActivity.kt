@@ -21,30 +21,5 @@ class MainActivity : AppCompatActivity() {
             replace(R.id.containerMainActivity, fragmentTrip)
             commit()
         }
-
-
-
-        val arrayList= ArrayList<Model>()
-        arrayList.add(Model("Date: 24.10.2022 12:35","Paid by Blagoveshenskiy Ivan","MCDonalds 125$",R.drawable.avatar))
-        arrayList.add(Model("Date: 24.10.2022 12:35","Paid by Vishya","Gas 25$",R.drawable.avatar))
-        arrayList.add(Model("Date: 24.10.2022 12:35","Paid by Oleg","Hotel 12$",R.drawable.avatar))
-        arrayList.add(Model("Date: 24.10.2022 12:35","Paid by Ivan","Train 75$",R.drawable.avatar))
-        arrayList.add(Model("Date: 24.10.2022 12:35","Paid by Slim","Taxi 25$",R.drawable.avatar))
-        arrayList.add(Model("Date: 24.10.2022 12:35","Paid by Den","Drugs 1250$",R.drawable.avatar))
-        arrayList.add(Model("Date: 24.10.2022 12:35","Paid by Blagoveshenskiy Ivan","MCDonalds 125$",R.drawable.avatar))
-        arrayList.add(Model("Date: 24.10.2022 12:35","Paid by Vishya","Gas 25$",R.drawable.avatar))
-        arrayList.add(Model("Date: 24.10.2022 12:35","Paid by Oleg","Hotel 12$",R.drawable.avatar))
-        arrayList.add(Model("Date: 24.10.2022 12:35","Paid by Ivan","Train 75$",R.drawable.avatar))
-        arrayList.add(Model("Date: 24.10.2022 12:35","Paid by Slim","Taxi 25$",R.drawable.avatar))
-        arrayList.add(Model("Date: 24.10.2022 12:35","Paid by Den","Drugs 1250$",R.drawable.avatar))
-
-
-//        val myAdapter= MyAdapter(arrayList)
-//        recyclerView.layoutManager=LinearLayoutManager(this)
-//        recyclerView.adapter= myAdapter
-
-
-        //Let's code
-
     }
 }

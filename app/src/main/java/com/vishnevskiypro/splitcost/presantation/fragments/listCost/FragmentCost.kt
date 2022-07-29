@@ -13,8 +13,6 @@ import com.google.android.material.shape.MaterialShapeDrawable
 import com.vishnevskiypro.splitcost.R
 import com.vishnevskiypro.splitcost.databinding.FragmentCostBinding
 import com.vishnevskiypro.splitcost.presantation.BottomAppBarCutCornersTopEdge
-import com.vishnevskiypro.splitcost.presantation.Model
-import com.vishnevskiypro.splitcost.presantation.MyAdapter
 import com.vishnevskiypro.splitcost.presantation.fragments.addCost.AddCost
 
 
@@ -50,33 +48,12 @@ class FragmentCost(context: Context) : Fragment(R.layout.fragment_cost) {
 
         binding.addCost.setOnClickListener {
             parentFragmentManager.beginTransaction().apply {
-                replace(R.id.containerCostScreen, fragmentAddCost)
+                replace(R.id.containerMainActivity, fragmentAddCost)
                 addToBackStack(null)
                 commit()
             }
 
         }
-
-        val arrayList= ArrayList<Model>()
-        arrayList.add(Model("Date: 24.10.2022 12:35","Paid by Blagoveshenskiy Ivan","MCDonalds 125$",R.drawable.avatar))
-        arrayList.add(Model("Date: 24.10.2022 12:35","Paid by Vishya","Gas 25$",R.drawable.avatar))
-        arrayList.add(Model("Date: 24.10.2022 12:35","Paid by Oleg","Hotel 12$",R.drawable.avatar))
-        arrayList.add(Model("Date: 24.10.2022 12:35","Paid by Ivan","Train 75$",R.drawable.avatar))
-        arrayList.add(Model("Date: 24.10.2022 12:35","Paid by Slim","Taxi 25$",R.drawable.avatar))
-        arrayList.add(Model("Date: 24.10.2022 12:35","Paid by Den","Drugs 1250$",R.drawable.avatar))
-        arrayList.add(Model("Date: 24.10.2022 12:35","Paid by Blagoveshenskiy Ivan","MCDonalds 125$",R.drawable.avatar))
-        arrayList.add(Model("Date: 24.10.2022 12:35","Paid by Vishya","Gas 25$",R.drawable.avatar))
-        arrayList.add(Model("Date: 24.10.2022 12:35","Paid by Oleg","Hotel 12$",R.drawable.avatar))
-        arrayList.add(Model("Date: 24.10.2022 12:35","Paid by Ivan","Train 75$",R.drawable.avatar))
-        arrayList.add(Model("Date: 24.10.2022 12:35","Paid by Slim","Taxi 25$",R.drawable.avatar))
-        arrayList.add(Model("Date: 24.10.2022 12:35","Paid by Den","Drugs 1250$",R.drawable.avatar))
-
-        val myAdapter= MyAdapter(arrayList)
-        binding.recyclerViewCost.layoutManager = LinearLayoutManager(context)
-        binding.recyclerViewCost.adapter = myAdapter
-
-
-
     }
 
 }
