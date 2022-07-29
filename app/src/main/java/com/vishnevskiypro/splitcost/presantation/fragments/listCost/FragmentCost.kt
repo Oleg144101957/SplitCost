@@ -16,7 +16,7 @@ import com.vishnevskiypro.splitcost.presantation.BottomAppBarCutCornersTopEdge
 import com.vishnevskiypro.splitcost.presantation.fragments.addCost.AddCost
 
 
-class FragmentCost(context: Context) : Fragment(R.layout.fragment_cost) {
+class FragmentCost() : Fragment(R.layout.fragment_cost) {
 
     lateinit var binding: FragmentCostBinding
 
@@ -37,7 +37,7 @@ class FragmentCost(context: Context) : Fragment(R.layout.fragment_cost) {
             binding.bottomAppBar.fabCradleRoundedCornerRadius,
             binding.bottomAppBar.cradleVerticalOffset)
         val babBackground = binding.bottomAppBar.background as MaterialShapeDrawable
-        //It requires 1.1.0-alpha10
+
         babBackground.shapeAppearanceModel = babBackground.shapeAppearanceModel
             .toBuilder()
             .setTopEdge(topEdge)

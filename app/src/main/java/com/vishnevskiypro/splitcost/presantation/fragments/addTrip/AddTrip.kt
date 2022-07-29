@@ -43,7 +43,7 @@ class AddTrip : Fragment(R.layout.fragment_add_trip) {
     private fun insertTripToDatabase() {
         val id = 0
         val tripName = binding.nameTripInput.text.toString()
-        val tripPersons = binding.personTripInput.toString()
+        val tripPersons = binding.personTripInput.text.toString()
         val tripAvatar = "train"
 
         if(inputCheck(tripName, tripPersons)){

@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.bottomappbar.BottomAppBarTopEdgeTreatment
 import com.google.android.material.shape.MaterialShapeDrawable
@@ -52,6 +53,7 @@ class FragmentTrip : Fragment(R.layout.fragment_trip) {
         val fragmentAddTrip = AddTrip()
 
         binding.addTrip.setOnClickListener {
+
             parentFragmentManager.beginTransaction().apply {
                 replace(R.id.containerMainActivity, fragmentAddTrip)
                 addToBackStack(null)
@@ -70,8 +72,6 @@ class FragmentTrip : Fragment(R.layout.fragment_trip) {
                 tripAdapter.setTripList(trip)
             }
         )
-
-
 
         super.onViewCreated(view, savedInstanceState)
     }
