@@ -12,7 +12,7 @@ data class Cost(
     val id: Int,
     val date: String,
     val description: String,
-    val amount: Float,
-    val user_id: Int,
-    val trip_id: Int
+    val amount: String,
+    val user_id: String,
+    val trip_id: String
 ) : Parcelable

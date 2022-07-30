@@ -72,10 +72,9 @@
             android:id="@+id/amount_cost"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="24sp"
-            android:layout_toRightOf="@id/description_cost"
-            android:layout_toEndOf="@id/paidBy"
-            android:text="25$" />
+            android:layout_toEndOf="@id/dateCost"
+            android:text="25$"
+            android:textSize="24sp" />
 
 
     </RelativeLayout>

@@ -26,9 +26,6 @@
         <action
             android:id="@+id/action_fragmentCost2_to_addCost2"
             app:destination="@id/addCost2" />
-        <argument
-            android:name="current_trip"
-            app:argType="com.vishnevskiypro.splitcost.model.Trip" />
     </fragment>
     <fragment
         android:id="@+id/addCost2"

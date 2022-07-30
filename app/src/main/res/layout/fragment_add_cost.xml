@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/nameTextInput"
+        android:id="@+id/nameOfCost"
         android:hint="Enter Name Cost"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -33,7 +33,7 @@
         android:hint="Enter Amount"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nameTextInput"/>
+        app:layout_constraintTop_toBottomOf="@id/nameOfCost"/>
 
     <EditText
         android:id="@+id/whoPaidInput"

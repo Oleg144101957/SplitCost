@@ -30,7 +30,7 @@ class ListTripAdapter : RecyclerView.Adapter<ListTripAdapter.TripHolder>(){
                 tripAvatarImage.setImageResource(R.drawable.ic_baseline_train_24)
                 tripLayout.setOnClickListener {
 
-                    val action = FragmentTripDirections.actionFragmentTripToFragmentCost2(trip)
+                    val action = FragmentTripDirections.actionFragmentTripToFragmentCost2()
                     binding.root.findNavController().navigate(action)
 
                 }

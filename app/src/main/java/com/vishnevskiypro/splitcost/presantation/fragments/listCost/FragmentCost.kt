@@ -7,6 +7,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.get
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.bottomappbar.BottomAppBarTopEdgeTreatment
 import com.google.android.material.shape.MaterialShapeDrawable
@@ -14,11 +17,13 @@ import com.vishnevskiypro.splitcost.R
 import com.vishnevskiypro.splitcost.databinding.FragmentCostBinding
 import com.vishnevskiypro.splitcost.presantation.BottomAppBarCutCornersTopEdge
 import com.vishnevskiypro.splitcost.presantation.fragments.addCost.AddCost
+import com.vishnevskiypro.splitcost.viewmodel.CostViewModel
 
 
 class FragmentCost() : Fragment(R.layout.fragment_cost) {
 
-    lateinit var binding: FragmentCostBinding
+    private lateinit var binding: FragmentCostBinding
+    private lateinit var mCostViewModel: CostViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -54,6 +59,21 @@ class FragmentCost() : Fragment(R.layout.fragment_cost) {
             }
 
         }
+
+        val costAdapter = ListCostAdapter()
+        val recyclerViewCost = binding.recyclerViewCost
+        recyclerViewCost.adapter = costAdapter
+        recyclerViewCost.layoutManager = LinearLayoutManager(requireContext())
+        mCostViewModel = ViewModelProvider(this).get(CostViewModel::class.java)
+        mCostViewModel.readAllCosts.observe(
+            viewLifecycleOwner, Observer { cost ->
+                costAdapter.setCostList(cost)
+            }
+        )
+
+
+
+
     }
 
 }
