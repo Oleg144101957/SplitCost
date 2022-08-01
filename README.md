@@ -1,5 +1,12 @@
 # SplitCost
 
+
+01.08.2022 Database ver 1
+
+<img src="https://user-images.githubusercontent.com/93651407/182122366-94206421-f612-49c0-bdfb-862955f7b824.png" width=50% height=50%>
+
+
+
 20.07.2022
 
 Диаграмма UseCases + Motion Layout 
